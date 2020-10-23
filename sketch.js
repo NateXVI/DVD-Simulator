@@ -83,5 +83,7 @@ function changeBackground() {
     backgroundColor = color(random(100), 100, 50);
     let d = abs(hue(backgroundColor) - hue(oldColor));
     if (d < 10 || d > 90) changeBackground();
-    dvdSpeed.rotate(random(-5,5));
+    let r = random(-15,15);
+    // console.log(r);
+    dvdSpeed.rotate(r);
 }
